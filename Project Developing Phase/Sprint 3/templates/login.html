@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.1">
+	<title>login</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'index.css') }}">
+</head>
+<body>
+	<div class="Navbar">
+		<div class="head">
+			<h2>DROWNING DETECTING SYSTEM</h2>
+		</div>
+		<div class="options">
+			<p><a class="a" href="/index">Home</a></p>
+			<p><a class="a" href="/register">Register</a></p>
+			<p><a class="a" href="/demo">Demo</a></p>
+		</div>
+	</div>
+	<div class="img">
+		<div>
+			<img id="img2" src="{{ url_for('static', filename = 'images/eyelogo.png') }}">
+		</div><br><br>
+		<div class="img">
+			<form action="/afterlogin" method="post">
+				<input class="inp" type="text" name="email" value="Enter registered email"><br><br>
+				<input class="inp" type="varchar" name="pwd" value="Enter password"><br><br>
+				<a href="/afterlogin"><input class="b1" type="button" name="login" value="Login"></a>
+			</form>
+		</div>
+		<p class="p">Not having an account? <a class="a1" href="/register">Create</a></p>
+	</div>
+</body>
+</html>

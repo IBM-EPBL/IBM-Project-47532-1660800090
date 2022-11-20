@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.1">
+	<title>prediction</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'index.css') }}">
+</head>
+<body>
+	<div class="Navbar">
+		<div class="head">
+			<h2>DROWNING DETECTING SYSTEM</h2>
+		</div>
+		<div class="options">
+			<p><a class="a" href="/index">Home</a></p>
+			<p><a class="a" href="/logout">Logout</a></p>
+		</div>
+	</div>
+	<div class="img3">
+		<p class="p3">Virtual Eye - Life Guard for Swimming Pools to Detect Active Drowning</p>
+	</div>
+	<div class="contentbox">
+		<div class="cbox1">
+			<p class="p4">Swimming is one of the best exercises that helps people to reduce stress in this urban lifestyle. Swimming pools are found larger in number in the hotels, weekend tourist spots and barely people have in their house backyard. Beginners, especially often feel it difficult to breathe under water and causes breathing trouble which in turn cause a drowning accident. Worldwide, drowning produces a higher rate of mortality without causing injury to children. Children under six of their age are found to be suffering the highest drowning mortality rates worldwide. Such kinds of deaths account for the third cause of unplanned death globally, with about 1.2 million cases yearly.</p>
+		</div>
+		<div class="cbox2">
+			<img class="image1" src="{{ url_for('static', filename = 'images/drown.jpg') }}"><br><br>
+			<div class="b4">
+				<a href="/result"><input class="b3" type="button" name="demo" value="Click Me! For Demo"></a>
+			</div>	
+		</div>
+	</div>
+	<div class="d">
+		<p class="p5">copyright © 2021. All rights reserved</p>
+	</div>
+</body>
+</html>
