@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.1">
+	<title>register</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'index.css') }}">
+</head>
+<body>
+	<div class="Navbar">
+		<div class="head">
+			<h2>DROWNING DETECTING SYSTEM</h2>
+		</div>
+		<div class="options">
+			<p><a class="a" href="/">Home</a></p>
+			<p><a class="a" href="/login">Login</a></p>
+			<p><a class="a" href="https://youtu.be/4CFhNMzbS24">Demo</a></p>
+		</div>
+	</div>
+	<div class="img">
+		<div>
+			<img id="img2" src="{{ url_for('static', filename = 'images/eyelogo.png') }}">
+		</div><br><br>
+		<div class="img">
+			<form action="" method="post">
+				<input class="inp" type="text" name="name" placeholder="Enter name"><br><br>
+				<input class="inp" type="email" name="email" placeholder="Enter email"><br><br>
+				<input class="inp" type="varchar" name="pwd" placeholder="Enter password"><br><br>
+				<input class="b1" type="submit" name="register" value="Register">
+			</form>
+		</div>
+		<p class="p">Already have an account? <a class="a1" href="/login">Login</a></p>
+		{% if pred %}
+		<p class="p0">{{pred}}</p>
+		{% endif %}
+	</div>
+</body>
+</html>
